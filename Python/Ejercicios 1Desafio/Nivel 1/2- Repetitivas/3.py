@@ -22,8 +22,12 @@ while input("Para realizar una nueva compra presione 'Enter'") == "":
     if codigo == 1:
             print(f"El monoto a pagar es: ${monto_a_pagar:.2f}")
     elif codigo == 2:
-            print(f"El monoto a pagar es: ${((monto_a_pagar) * (1-amarillo)):.2f}")
+             print(f"El monto de las compra es de ${monto_a_pagar}.\
+                \nObtuvo un descuento de ${(monto_a_pagar * amarillo):.2f}\
+                \nEl total a abonar ${(monto_a_pagar * (1 - amarillo)):.2f}.")
     elif codigo == 3:
-            print(f"El monoto a pagar es: ${((monto_a_pagar) * (1-rojo)):.2f}")
+            print(f"El monto de las compra es de ${monto_a_pagar}.\
+                \nObtuvo un descuento de ${(monto_a_pagar * rojo):.2f}\
+                \nEl total a abonar ${(monto_a_pagar * (1 - rojo)):.2f}.")
     
     print("Gracias por su compra!")

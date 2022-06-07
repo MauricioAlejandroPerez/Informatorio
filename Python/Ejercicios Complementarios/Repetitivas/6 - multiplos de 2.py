@@ -4,8 +4,13 @@
 tal que el segundo sea mayor o igual que el primero.
 
 '''
+# Declaracion de Variables:
 SerieDeNumeros = []
+ContadorDePares = 0
+SumaDePares = 0
+NumerosPares = []
 
+# Inicio del algoritmo: 
 print("Ingrese una serie de numeros o 'fin' para finalizar.")
 
 while True:
@@ -13,14 +18,9 @@ while True:
     
     if entrada == "fin":
         break
+    
     SerieDeNumeros.append(int(entrada))
-
-print(f"Los numeros ingresados son: {SerieDeNumeros}.")
-
-ContadorDePares = 0
-SumaDePares = 0
-NumerosPares = []
-
+    
 for numero in SerieDeNumeros:
     if (numero % 2) == 0:
         ContadorDePares += 1
@@ -29,6 +29,8 @@ for numero in SerieDeNumeros:
 
 NumerosPares.sort()
 
+# Resulta en pantalla:
+print(f"Los numeros ingresados son: {SerieDeNumeros}.")
 print(f"Los numeros pares de esta serie son {ContadorDePares}: \
         \n{NumerosPares} \
         \nLa sumatoria de ellos es igual a: {SumaDePares}.")

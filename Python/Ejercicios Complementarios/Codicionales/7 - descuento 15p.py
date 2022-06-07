@@ -9,5 +9,5 @@ if monto_compra < 1000:
     print(f"El total a abonar ${monto_compra:.2f}")
 else:
     print(f"El monto de las compra es de ${monto_compra}.\
-          \nObtuvo un descuento de ${(monto_compra*descuento):.2f}\
+          \nObtuvo un descuento de ${(monto_compra * descuento):.2f}\
           \nEl total a abonar ${(monto_compra * (1 - descuento)):.2f}.")

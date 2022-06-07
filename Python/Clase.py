@@ -30,10 +30,12 @@ producto = input("Ingrese nombre del Producto:")
 precio = float(input("Ingrese el precio del Producto:$ "))
 unidades = int(input("Ingrese canidad de unidades:"))
 costetotal = round(float(precio*unidades),2)
-print(f"Producto    -   Precio-unitario    -  Unidades    -  Costo-total\n{producto}    -> ${precio}    ->{unidades}    ->${costetotal}")
+print(f"Producto    -   Precio-unitario    -  Unidades    -  Costo-total\
+    \n{producto}    -> ${precio}    ->{unidades}    ->${costetotal}")
 '''
-# numero_users = int(input("Ingrese la cantidad de usuarios a cargar:\n"))
-# 
-# while numero_users > users_cargados:
-    # users_cargados = 0
+'''
+numero_users = int(input("Ingrese la cantidad de usuarios a cargar:\n"))
 
+while numero_users > users_cargados:
+    users_cargados = 0
+'''

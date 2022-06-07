@@ -36,12 +36,12 @@ while count < tab_alto:
     count += 1
     if (count % 2 == 0):
         for i, casilla in enumerate(casilla_h1):
-            if i != len(casilla_h1)-1:
+            if i != len(casilla_h1) - 1:
                 print(casilla, end=""),
             else: print(casilla)
     else:
         for i, casilla in enumerate(casilla_h2):
-            if i != len(casilla_h2)-1:
+            if i != len(casilla_h2) - 1:
                 print(casilla, end=""),
             else: print(casilla)
 '''

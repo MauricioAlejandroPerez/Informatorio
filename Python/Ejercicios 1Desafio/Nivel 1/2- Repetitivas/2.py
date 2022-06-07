@@ -31,6 +31,6 @@ while True:
 
 # Resultado en pantalla:
 print("\nLas estadisticas de los recolectores son las siguientes:")
-print(f"El {(menos100/Recolectores*100):.2f}% recolectaron 100 colillas o menos.")
-print(f"El {(entre100y200/Recolectores*100):.2f}% recolectaron entre 100 y 200 colillas.")
-print(f"El {(mas200/Recolectores*100):.2f}% recolectaron mas de 200 colillas.")
+print(f"El {(menos100 / Recolectores * 100):.2f}% recolectaron 100 colillas o menos.")
+print(f"El {(entre100y200 / Recolectores * 100):.2f}% recolectaron entre 100 y 200 colillas.")
+print(f"El {(mas200 / Recolectores * 100):.2f}% recolectaron mas de 200 colillas.")
