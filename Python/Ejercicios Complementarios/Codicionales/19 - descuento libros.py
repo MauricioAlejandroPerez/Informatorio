@@ -49,11 +49,13 @@ if tipo_comprador == "l":
         descuento = 20
     elif unidades_compradas > 24:
         descuento = 25
+
 elif tipo_comprador == "p":
     if unidades_compradas > 6 and unidades_compradas <= 18:
         descuento = 5
     elif unidades_compradas > 18:
         descunto = 10
+
 monto_a_pagar = monto_total * (1 - descuento/100)
 
 print(f"El pedido por {unidades_compradas} libros asciende a un total de ${monto_total:.2f}.")

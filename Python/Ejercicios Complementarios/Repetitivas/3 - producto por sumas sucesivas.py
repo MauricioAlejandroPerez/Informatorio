@@ -1,8 +1,8 @@
 '''
 Diseñar un programa que permita obtener el producto entre A y B mediante sumas sucesivas.
 '''
-a = int(input("Ingrese el primer valor:\n"))
-b = int(input("Ingrese el segundo valor:\n"))
+a = int(input("Ingrese el valor de A:\n"))
+b = int(input("Ingrese el valor de B:\n"))
 producto = 0
 count = 0
 

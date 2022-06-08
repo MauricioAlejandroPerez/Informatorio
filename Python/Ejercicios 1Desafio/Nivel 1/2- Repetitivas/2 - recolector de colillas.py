@@ -12,8 +12,8 @@ entre100y200 = 0
 mas200 = 0
 
 # Contador de recolectores:
-print("Ingrese la cantidad de colillas recolectada por cada persona o 'fin' para finalizar.")
 while True:
+    print("Ingrese la cantidad de colillas recolectada por cada persona o 'fin' para finalizar.")
     entrada = input("Cuantas colillas junto?:\n")
     
     if entrada == "fin":
