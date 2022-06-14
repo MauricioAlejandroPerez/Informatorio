@@ -8,7 +8,7 @@ valor_error = "\nValor ingresado incorrecto.\nIntente nuevamente."
 
 print("Inicializando calculadora basica.")
 while True:
-     # Condicion de cierre/Nuevo ingreso:
+    # Condicion de cierre/Nuevo ingreso:
     cc = input("\nDesea realizar una operacion matematica? (S/N)").lower()
     
     if cc == "n":
