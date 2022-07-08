@@ -14,7 +14,7 @@ while count < 5:
     lista.append(int(input(f"Ingrese el {count}* numero: ")))
 
 # Lista de cuadrados
-cuadrados = [num**2 for num in lista ]
+lista = [num**2 for num in lista ]
 
 #Resultado por pantalla:
-print(cuadrados)
+print(lista)

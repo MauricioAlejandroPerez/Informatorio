@@ -1,3 +1,4 @@
+import random
 '''
 x = list(range(5))
 
@@ -69,6 +70,21 @@ lista = [value for value in range(1,11)]
 # lista = list(range(1,11)) 
 print(lista)
 # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+'''
+'''
+lista_random = [random.randrange(0, 100) for value in range(10)]
+
+lista_pila = []
+lista_cola = []
+
+for num in lista_random:
+    lista_cola.append(num) # cola: FIFO, primero entrada, primero salida
+    lista_pila.insert(0, num) # pila: LIFO, ultima entrada, primero salida
+
+print(lista_random)
+
+print(lista_pila)
+print(lista_cola)
 '''
 myDict = {"name": "John", "country": "Norway"}
 mySeparator = "TEST"

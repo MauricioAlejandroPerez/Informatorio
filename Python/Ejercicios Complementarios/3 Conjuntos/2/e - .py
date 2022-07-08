@@ -4,3 +4,6 @@
  y cuántos mensajes hay en la lista, teniendo en cuenta que todos los mensajes están correctamente formados, 
  es decir comienzan con { y terminan con }. Y que es seguro que al menos exista un usuario en la lista
 '''
+lista = ["{mensajes}&", "no un mensaje", "{encriptados}&"]
+
+print(lista)

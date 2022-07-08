@@ -63,12 +63,41 @@ if dividendo % divisor:
 else:
     print(f"La división es exacta. Cociente: {dividendo // divisor}")
 '''
-hec = float(input("hec"))
-matorral = input("mat")
-comp = float(input("comp"))
+'''
+tempfarenheit = lambda grados : grados * 1.8 + 32
 
-porc = comp * 100 / hec
+print(tempfarenheit(29))
+'''
+'''
+pila_1 = [1, 2, 3]
 
-print(porc)
-if porc >= 10:
-    print("si")
+pila_2 = []
+
+contenedor = pila_1.pop(2)
+
+print(contenedor)
+
+pila_2.append(contenedor)
+
+print(pila_1)
+print(pila_2)
+'''
+residuos = {
+        "Bolsa de plastico" : 150,
+        "Botella PET" : 1000,
+        "Envase de Tetrabrik" : 30,
+        "Chicle" : 5
+}
+
+residuos_enumerados = {}
+contador = 0
+print("Que residuo desea desechar? ")
+for k, v in residuos.items():
+        contador += 1
+        print(f"{contador}. {k}.")
+        residuos_enumerados[contador] = v
+tirar = int(input(""))
+
+print(residuos_enumerados)
+
+print(residuos_enumerados[tirar])
