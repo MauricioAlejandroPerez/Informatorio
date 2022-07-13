@@ -4,6 +4,11 @@
  y cuántos mensajes hay en la lista, teniendo en cuenta que todos los mensajes están correctamente formados, 
  es decir comienzan con { y terminan con }. Y que es seguro que al menos exista un usuario en la lista
 '''
-lista = ["{mensajes}&", "no un mensaje", "{encriptados}&"]
+lista = ["mensaje {encriptado}&", "}no un& mensaje{", "{encriptados}&"]
+contador = 0
 
-print(lista)
+for mensaje in lista:
+    if mensaje.startswith("{") and mensaje.endswith("}&"):
+        contador += 1
+
+print(f"La lista contiene {contador} mensajes encriptados")

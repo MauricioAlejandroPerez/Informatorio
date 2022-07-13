@@ -5,11 +5,11 @@ ingreso y salida de contenedores. Note que para retirar un contenedor es necesar
 que están encima de él y colocarlos en otra pila.
 '''
 # Inicialiciacion de variables:
-pila_1 = ["Fideos", "Arroz", "Lentejas", "Arvejas", "Garbanzos"]
-pila_2 = ["Atun",]
-pila_3 = ["Palmitos",]
-pila_4 = ["Choclo",]
-pila_5 = ["Humita",]
+pila_1 = ["Mate", "Cafe", "Harina", "Palmitos", ]
+pila_2 = ["Yerba", "Mermelada", "Cacao", "Picadillo"]
+pila_3 = ["Pate", "Caballa", "Arroz", "Arvejas"]
+pila_4 = ["Sardinas", "Atun"]
+pila_5 = ["Choclo", "Lentejas"]
 almacen = [pila_1, pila_2, pila_3, pila_4, pila_5]
 
 # Algoritmo:
