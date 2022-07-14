@@ -4,7 +4,7 @@
  y cuántos mensajes hay en la lista, teniendo en cuenta que todos los mensajes están correctamente formados, 
  es decir comienzan con { y terminan con }. Y que es seguro que al menos exista un usuario en la lista
 '''
-lista = ["mensaje {encriptado}&", "}no un& mensaje{", "{encriptados}&"]
+lista = ["mensaje& {mensajes}&", "}no un} & mensaje{", "{encriptados}&"]
 contador = 0
 
 for mensaje in lista:
@@ -12,3 +12,13 @@ for mensaje in lista:
         contador += 1
 
 print(f"La lista contiene {contador} mensajes encriptados")
+
+for i, mensaje in enumerate(lista):
+    try:
+        msg_starts = lista[i].index("{", 0)+1
+        msg_ends = lista[i].index("}&", msg_starts)
+        
+        print(lista[i][msg_starts:msg_ends])
+    except ValueError:
+        print("")
+    
