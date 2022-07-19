@@ -5,3 +5,11 @@ original y el número correcto de espacios iniciales para que la cadena original
 del ancho proporcionado cuando se imprima. No agregue ningún carácter al final de la cadena. Incluya un 
 programa principal que use su función.
 '''
+# Largo del terminal: 153 caracteres
+def centrar_titulo(titulo):
+    espaciado = " " * round((153 - len(titulo)) / 2)
+    print(espaciado + titulo)
+
+titulo = input("Ingrese un titulo: ")
+
+centrar_titulo(titulo)
