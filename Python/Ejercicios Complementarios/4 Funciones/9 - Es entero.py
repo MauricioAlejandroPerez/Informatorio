@@ -8,3 +8,12 @@ informe si representa o no un número entero.
 
 Sugerencia: Puede encontrar los métodos lstrip, rstrip y / o strip para cadenas útiles cuando complete este ejercicio.
 '''
+def es_entero(num):
+    try: 
+        num = int(num.strip(" "))
+        print(f"{num} Es entero.")
+    except:
+        print(num + " No es entero.")
+  
+
+es_entero(input("Ingrese un numero: "))

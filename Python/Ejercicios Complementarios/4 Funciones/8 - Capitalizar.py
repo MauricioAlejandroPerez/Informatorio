@@ -7,3 +7,20 @@ Por ejemplo, si la función se proporciona con la cadena "¿a qué hora tengo qu
 Entonces debería devolver la cadena "¿A qué hora tengo que estar allí? ¿Cuál es la dirección?". 
 Incluya un programa principal que lea una cadena del usuario, la capitalice utilizando su función y muestre el resultado.
 '''
+def capitalizador(texto):
+    texto = texto.capitalize()
+    nuevo_string = ""
+
+    for i, letter in enumerate(texto):
+        if texto[i - 1] == "¡" or texto[i - 1] == "¿":
+            nuevo_string += letter.upper()
+        elif i > 1 and (texto[i - 2] == "." or texto[i - 2] == "!" or texto[i - 2] == "?"):
+            nuevo_string += letter.upper()
+        else:
+            nuevo_string += letter
+
+    return nuevo_string 
+
+cadena = capitalizador(input("Escriba un mensaje: "))
+
+print(cadena)

@@ -8,3 +8,12 @@ o un mensaje de error que indique que la entrada no era un operador.
 En este ejercicio, se usa ^ para representar la exponenciación, en lugar de la elección de Python de **, para facilitar 
 el desarrollo de la solución.
 '''
+cadena = "   .  p   .    "
+print("(" + cadena + ")")
+while cadena.startswith(" "):
+    cadena = cadena[1:]
+
+while cadena.endswith(" "):
+    cadena = cadena[:len(cadena) - 1]
+
+print("(" + cadena + ")")
