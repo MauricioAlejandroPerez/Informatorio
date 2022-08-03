@@ -12,7 +12,7 @@ función.
 triangulo = lambda l1, l2, l3: not(l1 > (l2 + l3) or l2 > (l1 + l3) or l3 > (l1 + l2))
 
 while True:
-    print("Ingrese a contunuacion uno a uno los lados del triangulo para calcular su perimetro.")
+    print("Ingrese a contunuacion uno a uno la longitud de los lados para determinar si se trata de un triangulo.")
     l1 = int(input("Ingrese la longitud de uno de los lados: "))
     l2 = int(input("Ingrese la longitud de otro de los lados: "))
     l3 = int(input("Ingrese la longitud del lado restante: "))
