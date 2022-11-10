@@ -8,6 +8,6 @@ el resultado.
 Hipotenusa = lambda l1, l2 : (l1 ** 2 + l2 ** 2) ** (.5)
 
 lado1 = float(input("Cuanto mide el primer lado? "))
-lado2 = float(input("Cuanto mide el primer lado? "))
+lado2 = float(input("Cuanto mide el segundo lado? "))
 
 print(f"La hipotenusa del triangulo es igual a {Hipotenusa(lado1, lado2)}")

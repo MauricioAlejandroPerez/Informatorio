@@ -14,15 +14,17 @@ usando declaraciones if, o con un poco de creatividad matemática.
 #         valor_medio = v3
 #     return valor_medio
 
-def mediana(v1, v2, v3):
-    lista = [v1, v2, v3]
+def mediana(lista):
+    # lista = [v1, v2, v3]
     lista.remove(min(lista))
     lista.remove(max(lista))
     valor_medio = lista[0]
     return valor_medio
 
-v1 = int(input("Ingrese un valor entero: "))
-v2 = int(input("Ingrese un valor entero: "))
-v3 = int(input("Ingrese un valor entero: "))
+lista_valores = []
+while len(lista_valores) < 3: 
+    lista_valores.append(int(input("Ingrese un valor entero: ")))
+# v2 = int(input("Ingrese un valor entero: "))
+# v3 = int(input("Ingrese un valor entero: "))
 
-print(f"El valor de la mediana es: {mediana(v1, v2, v3)}")
+print(f"El valor de la mediana es: {mediana(lista_valores)}")

@@ -47,3 +47,4 @@ lista_cliente_regalo = {}
 for cliente in lista_clientes:
     lista_cliente_regalo[cliente] = regalos_disponibles.pop()
     print(f"El cliente '{cliente}' recibira {lista_cliente_regalo[cliente]} como regalo de la compania.")
+

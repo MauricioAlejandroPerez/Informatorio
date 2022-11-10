@@ -20,5 +20,5 @@ for i, mensaje in enumerate(lista):
         
         print(lista[i][msg_starts:msg_ends])
     except ValueError:
-        print("")
+        print("-")
     
